@@ -21,7 +21,7 @@ exports.default = {
       const header_sub = `LIST MENU`;
       const header = `┌───`;
       const middle = `│`;
-      const pointer = `⭓`;
+      const pointer = `🎗`;
       const bottom = `└──────────⭓\n`
       const left = `『`;
       const right = `』`;
@@ -36,19 +36,19 @@ exports.default = {
       info += `${side} Network Bot Usage :\n${side} 📥 Download: ${Download}\n${side} 📤 Upload: ${Upload}\n${side}${garis}\n`;
       info += `${side} ${lolim} = Limit \n${side} ${loprem} = Premium\n*└*${garis}`;
       if (type === 1) {
-         m.react('🐽');
+         m.react('♻');
          const all_menu = await Format.Menu(header, middle, pointer, bottom, prefix, top);
          conn.adReply(m.chat, `${info}\n\n${all_menu}`, cover, m, {
             showAds: true
          });
       } else if (type === 2) {
-         m.react('🖕');
+         m.react('♻');
          const sub_menu = await Format.Menu(header, middle, pointer, bottom, prefix, top);
          conn.adReply(m.chat, `${info}\n\n${sub_menu}`, cover, m, {
             showAds: true
          });
       } else if (type === 3) {
-         m.react('🥶');
+         m.react('♻');
          const opts = [{
             title: 'Owner',
             id: '.owner'
